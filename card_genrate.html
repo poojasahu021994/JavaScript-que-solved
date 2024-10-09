@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #visiting_card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 400px;
+            box-shadow: 0px 0px 10px 10px rgb(137, 243, 247);
+            border-radius: 10px;
+        }
+
+        #visiting_card div img{
+            border-radius: 50%;
+            width: 100px;
+        }
+        form{
+            align-content: center;
+            margin: 100px 0 0 100px;
+        }
+        form input{
+            margin-top: 10px;
+            height: 20px;
+            width: 200px;
+        }
+        #main_div{
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            margin: 100px 0 0 300px;
+
+        }
+    </style>
+</head>
+<body>
+   <div id="main_div">
+    <form>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <input type="text" id="phone" placeholder="Enter phone number"><br>
+        <input type="text" id="email" placeholder="Enter Email"><br>
+        <input type="text" id="designation" placeholder="Enter designation"><br>
+        <input type="text" id="address" placeholder="Enter Address"><br>
+        <input type="text" id="image" placeholder="Enter image url"><br><br>
+        <button onclick="return card()"> Generate card </button>
+    </form>
+</div>
+    <div id="output">
+
+    </div>
+    <script src="./card_genrate.js"></script>
+</body>
+</html>
