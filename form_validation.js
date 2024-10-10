@@ -35,6 +35,21 @@ function registration(){
          selectpassword.style.color ="red"
          return false;
     }
+    else if
+    (!(cpassword.match(/[1234567890]/)
+     && 
+     cpassword.match(/[!@#$%^&*_()-]/) 
+     && 
+     cpassword.match(/[qwertyuiopasdfghjklzxcvbnm]/) 
+     && 
+     cpassword.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/))){
+        document.querySelector('#errorname4').innerHTML = "password contains atleast 1 lower, upper,special and number";
+        let selectage = document.querySelector('#password');
+        selectage.style.borderColor = "red"
+        selectage.style.borderColor = "red"
+        return false;
+    }
+
     else if(cpassword== ""){
         document.querySelector('#errorname5').innerHTML ="please enter your confirm password";
          let selectcpassword = document.querySelector('#cpassword');
@@ -42,16 +57,20 @@ function registration(){
          selectcpassword.style.outlineColor ="red"
          return false;
     }
+
     else if
     (!(cpassword.match(/[1234567890]/)
-&&
-cpassword.match(/[!@#$%^&*_()-]/)
-&&
-cpassword.match(/[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/)
-&&
-cpassword.match(/[abcdefghijklmnopqrstuvwxyz]/)))
-{
-    document.querySelector('#errorname5').innerHTML = "password contains 1 lower, upper, special and number";
-
-}
+     && 
+     cpassword.match(/[!@#$%^&*_()-]/) 
+     && 
+     cpassword.match(/[qwertyuiopasdfghjklzxcvbnm]/) 
+     && 
+     cpassword.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)))
+     {
+        document.querySelector('#errorname5').innerHTML = "password contains atleast 1 lower, upper,special and number";
+        let selectage = document.querySelector('#cpassword');
+        selectage.style.borderColor = "red"
+        selectage.style.borderColor = "red"
+        return false;
+    }
 }

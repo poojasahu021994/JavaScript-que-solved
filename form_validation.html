@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form validation for Email and name input field</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="form_validation.css">
+
 </head>
 <body>
     <div id="main-div">
-        <form id="form">
-            <div><h2 id="heading">Registration Form</h2></div>
-            <div id="errorname"></div>
-            <input type="text" placeholder="Enter name" id="name"><br>
-            <div id="errorname2"></div>   
-            <input type="email" placeholder="Enter ypur email" id="email"><br>
-            <div id="errorname3"></div>
-            <input type="tel" placeholder="Enter your Mobile No." id="mobile"><br>
-            <div id="errorname4"></div>
-            <input type="password" placeholder="Enter password" id="password"><br>
-            <div id="errorname5"></div>
-            <input type="password" placeholder="Enter confirm password" id="cpassword"><br>
-            <div id="btn1"><button onclick="return registration()">Submit</button></div>
-        </form>
-    </div>
-    <script src="form_validation.js"></script>
+    <form id="form">
+        <div><h2 id="heading">Registration Form</h2></div>
+
+        <div id="errorname"></div>
+        <input type="text" placeholder="Enter name" id="name"><br>
+
+        <div id="errorname2"></div>   
+        <input type="email" placeholder="Enter ypur email" id="email"><br>
+
+        <div id="errorname3"></div>
+        <input type="tel" placeholder="Enter your Mobile No." id="mobile"><br>
+
+        <div id="errorname4"></div>
+        <input type="password" placeholder="Enter password" id="password"><br>
+
+        <div id="errorname5"></div>
+        <input type="password" placeholder="Enter confirm password" id="cpassword"><br>
+        
+        <div id="btn1"><button onclick="return registration()">Submit</button></div>
+    </form>
+</div>
+    <script src="./form_validation.js"></script>
 </body>
 </html>
